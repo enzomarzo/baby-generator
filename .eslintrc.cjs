@@ -5,9 +5,9 @@ module.exports = {
   },
   extends: [
     "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
     "airbnb",
     "airbnb-typescript",
-    "plugin:react/jsx-runtime",
     "prettier"
   ],
   parser: "@typescript-eslint/parser",
@@ -16,7 +16,8 @@ module.exports = {
       jsx: true
     },
     ecmaVersion: 12,
-    sourceType: "module"
+    sourceType: "module",
+    project: ["./tsconfig.json"]
   },
   plugins: ["react", "@typescript-eslint"],
   rules: {
