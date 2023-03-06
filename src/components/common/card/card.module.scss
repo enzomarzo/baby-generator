@@ -16,25 +16,23 @@
 
   .image {
     width: 75%;
-    padding: 12px;
+    padding: 20px 12px;
     place-self: center;
     background-position: center;
     background-size: cover;
   }
 
-  .text {
-    padding: 16px;
+  &-baby-name {
+    padding: 0px;
+    margin: 0px;
     text-align: center;
+    font-size: 32px;
+    font-family: PassionOne-Regular, Arial, sans-serif;
+  }
 
-    h2 {
-      font-size: 24px;
-      margin: 0 0 8px;
-    }
-
-    p {
-      font-size: 16px;
-      margin: 0;
-      color: #555;
-    }
+  &-complement {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
   }
 }
