@@ -1,13 +1,15 @@
-import "./content.scss";
 import Button from "../foundation/button/Button";
+import Card from "../common/card/Card";
+import classes from "./content.module.scss";
 
 function Content() {
   return (
-    <div className="cmp-name-generator">
-      <div className="cmp-name-generator_button-group">
+    <div className={classes.cmpNameGenerator}>
+      <div className={classes.cmpNameGeneratorButtonGroup}>
         <Button>MALE</Button>
         <Button>FEMALE</Button>
       </div>
+      <Card />
     </div>
   );
 }
