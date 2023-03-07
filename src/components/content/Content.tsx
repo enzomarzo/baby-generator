@@ -6,7 +6,7 @@ import useBabyNames from "../hooks/useBabyNames";
 import getOrdinal from "../../utils/getOrdinal";
 
 function Content() {
-  const { babyGirls, babyBoys } = useBabyNames();
+  const { babyGirls, babyBoys, error } = useBabyNames();
   const [babyChoosen, setBabyChoosen] = useState<string[] | null>(null);
   const [isGirl, setIsGirl] = useState(true);
 
@@ -47,6 +47,7 @@ function Content() {
         <Button onClick={onClickBoy}>BOY</Button>
         <Button onClick={onClickGirl}>GIRL</Button>
       </div>
+      {error && <p>Sorry, there was an error. Please try again later</p>}
       {babyChoosen && (
         <>
           <Card isGirl={isGirl} babyName={babyChoosen[3]} />
