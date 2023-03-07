@@ -6,17 +6,10 @@ interface ICardProps {
 }
 
 function Card({ babyName, isGirl }: ICardProps) {
-  const complimentsSynonyms = [
-    "beautiful",
-    "pretty",
-    "lovely",
-    "cute",
-    "wonderful"
-  ];
+  const compliments = ["beautiful", "pretty", "lovely", "cute", "wonderful"];
+  const { length } = compliments;
   const randomCompliments =
-    complimentsSynonyms[
-      Math.floor(Math.random() * complimentsSynonyms.length)
-    ].toUpperCase();
+    compliments[Math.floor(Math.random() * length)].toUpperCase();
 
   return (
     <div className={classes.card}>
