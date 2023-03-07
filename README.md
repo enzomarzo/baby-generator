@@ -15,7 +15,3 @@ The components in this project are organized into three folders for better organ
 This project is built using **React 18**, **Vite 4**, **TypeScript**, and **SASS modules**.
 
 We are using custom hook to fetch data and separate concerns for better code organization.
-
-### Cotent Preview
-
-<iframe src="https://giphy.com/embed/WAF08PSqtfRtLdbmQK" width="240" height="135" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/WAF08PSqtfRtLdbmQK"></a></p>
