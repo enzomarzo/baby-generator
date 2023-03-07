@@ -1,7 +1,7 @@
 ### Getting Started
 
 - `npm install` (or `pnpm install` or `yarn install`)
-- To run the project locally, use`npm run dev`
+- To run the project locally, use `npm run dev`
 - To test the project, use `npm run test`
 
 ### Docs
